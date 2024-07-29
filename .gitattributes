@@ -1,0 +1,11 @@
+# Đảm bảo các tệp văn bản sử dụng LF trong repo nhưng sử dụng CRLF trên Windows
+* text=auto
+
+# Cài đặt cụ thể cho các loại tệp đã biết
+*.py text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.xml text eol=lf
+
+# Bỏ qua thay đổi kết thúc dòng cho thư mục .idea
+.idea/* -text
